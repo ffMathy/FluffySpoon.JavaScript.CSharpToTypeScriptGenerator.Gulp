@@ -1,5 +1,3 @@
-# FluffySpoon.JavaScript.CSharpToTypeScriptGenerator.Gulp
-
 # Installing
 ```shell
 npm install --save-dev https://github.com/ffMathy/FluffySpoon.JavaScript.CSharpToTypeScriptGenerator.Gulp.git
