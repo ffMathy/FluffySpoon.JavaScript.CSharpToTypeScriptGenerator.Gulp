@@ -21,7 +21,7 @@ module.exports = function(options?: FileEmitOptions) {
 				var csharpCode = file.contents.toString();
 
                 		var emitter = new Emitter(csharpCode);
-                		var typescriptCode = emitter.emitFile(options);
+                		var typescriptCode = emitter.emit(options);
 				file.contents = new Buffer(typescriptCode);
 
                 		var suffix = "d.ts";
