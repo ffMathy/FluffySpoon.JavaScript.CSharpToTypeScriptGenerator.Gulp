@@ -5,6 +5,7 @@ npm install --save-dev @fluffy-spoon/javascript.csharp-to-typescript-generator.g
 
 # Use
 ```javascript
+var gulp = require('gulp');
 var poco = require('@fluffy-spoon/javascript.csharp-to-typescript-generator.gulp');
 
 gulp.task('poco', function () {
