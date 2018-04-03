@@ -23,6 +23,6 @@
     "jasmine": "^2.6.0"
   },
   "dependencies": {
-    "fluffy-spoon.javascript.csharp-to-typescript-generator": "https://github.com/ffMathy/FluffySpoon.JavaScript.CSharpToTypeScriptGenerator.git"
+    "@fluffy-spoon/javascript.csharp-to-typescript-generator": "latest"
   }
 }
