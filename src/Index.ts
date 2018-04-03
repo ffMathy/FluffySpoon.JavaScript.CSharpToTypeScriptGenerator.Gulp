@@ -18,6 +18,7 @@ module.exports = function(options?: EmitOptions) {
 
 		if (file.isBuffer()) {
 			if (file.contents) {
+				console.log("Generating TypeScript for C# file " + file.path);
 				var csharpCode = file.contents.toString();
 
                 		var emitter = new Emitter(csharpCode);
