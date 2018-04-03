@@ -1,4 +1,4 @@
-import { FileEmitter, FileEmitOptions } from '@fluffy-spoon/javascript.csharp-to-typescript-generator';
+import { Emitter, EmitOptions } from '@fluffy-spoon/javascript.csharp-to-typescript-generator';
 
 var through = require('through2');
 var gutil = require('gulp-util');
@@ -20,11 +20,11 @@ module.exports = function(options?: FileEmitOptions) {
 			if (file.contents) {
 				var csharpCode = file.contents.toString();
 
-                var emitter = new FileEmitter(csharpCode);
-                var typescriptCode = emitter.emitFile(options);
+                		var emitter = new Emitter(csharpCode);
+                		var typescriptCode = emitter.emitFile(options);
 				file.contents = new Buffer(typescriptCode);
 
-                var suffix = "d.ts";
+                		var suffix = "d.ts";
 				file.path = file.path.substring(0, file.path.length - 2) + suffix;
 			}
 		}
