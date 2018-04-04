@@ -6,7 +6,7 @@ var PluginError = gutil.PluginError;
 
 var PLUGIN_NAME = '@fluffy-spoon/javascript.csharp-to-typescript-generator.gulp';
 
-module.exports = function(options?: EmitOptions, extension: ".d.ts"|".ts" = ".d.ts") {
+module.exports = function(options?: EmitOptions, extension: "d.ts"|"ts" = "d.ts") {
     if(!options)
         options = {};
 
@@ -26,7 +26,7 @@ module.exports = function(options?: EmitOptions, extension: ".d.ts"|".ts" = ".d.
                 		var typescriptCode = emitter.emit(options);
 				file.contents = new Buffer(typescriptCode);
 
-				file.path = file.path.substring(0, file.path.length - 3) + extension;
+				file.path = file.path.substring(0, file.path.length - 2) + extension;
 			}
 		}
 
