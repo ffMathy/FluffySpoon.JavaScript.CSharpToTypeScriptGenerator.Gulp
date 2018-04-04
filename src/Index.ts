@@ -6,7 +6,7 @@ var PluginError = gutil.PluginError;
 
 var PLUGIN_NAME = '@fluffy-spoon/javascript.csharp-to-typescript-generator.gulp';
 
-module.exports = function(options?: EmitOptions) {
+module.exports = function(options?: EmitOptions, extension: ".d.ts"|".ts") {
     if(!options)
         options = {};
 
@@ -18,8 +18,6 @@ module.exports = function(options?: EmitOptions) {
 
 		if (file.isBuffer()) {
 			if (file.contents) {
-				Error.stackTraceLimit = 100;
-				
 				console.log("Generating TypeScript for C# file " + file.path);
 				
 				var csharpCode = file.contents.toString();
@@ -28,8 +26,7 @@ module.exports = function(options?: EmitOptions) {
                 		var typescriptCode = emitter.emit(options);
 				file.contents = new Buffer(typescriptCode);
 
-                		var suffix = "d.ts";
-				file.path = file.path.substring(0, file.path.length - 2) + suffix;
+				file.path = file.path.substring(0, file.path.length - 3) + extension;
 			}
 		}
 
