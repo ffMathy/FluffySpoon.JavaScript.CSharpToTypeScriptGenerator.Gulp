@@ -1,7 +1,7 @@
 {
   "name": "@fluffy-spoon/javascript.csharp-to-typescript-generator.gulp",
   "version": "1.0.0",
-  "description": "Parses C# code as well as possible into JavaScript objects via Gulp.",
+  "description": "",
   "main": "./src/Index",
   "typings": "./src/Index.d.ts",
   "scripts": {
