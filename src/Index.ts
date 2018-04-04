@@ -6,7 +6,7 @@ var PluginError = gutil.PluginError;
 
 var PLUGIN_NAME = '@fluffy-spoon/javascript.csharp-to-typescript-generator.gulp';
 
-module.exports = function(options?: EmitOptions, extension: "d.ts"|"ts" = "d.ts") {
+module.exports = function(options?: EmitOptions, extension?: "d.ts"|"ts" = "d.ts") {
     if(!options)
         options = {};
 
