@@ -1,5 +1,5 @@
 {
-  "name": "@fluffy-spoon/javascript.csharp-to-typescript-generator.gulp",
+  "name": "@fluffy-spoon/csharp-to-typescript-generator.gulp",
   "version": "1.0.0",
   "description": "",
   "main": "./src/Index",
@@ -23,6 +23,6 @@
     "jasmine": "^2.6.0"
   },
   "dependencies": {
-    "@fluffy-spoon/javascript.csharp-to-typescript-generator": "latest"
+    "@fluffy-spoon/csharp-to-typescript-generator": "latest"
   }
 }
