@@ -4,7 +4,7 @@ var through = require('through2');
 var gutil = require('gulp-util');
 var PluginError = gutil.PluginError;
 
-var PLUGIN_NAME = '@fluffy-spoon/javascript.csharp-to-typescript-generator.gulp';
+var PLUGIN_NAME = '@fluffy-spoon/csharp-to-typescript-generator.gulp';
 
 module.exports = function(options?: EmitOptions, extension?: "d.ts"|"ts") {
     if(!options)
