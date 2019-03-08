@@ -1,8 +1,7 @@
 import { Emitter, EmitOptions } from '@fluffy-spoon/csharp-to-typescript-generator';
 
 var through = require('through2');
-var gutil = require('gulp-util');
-var PluginError = gutil.PluginError;
+var PluginError = require('plugin-error');
 
 var PLUGIN_NAME = '@fluffy-spoon/csharp-to-typescript-generator.gulp';
 
