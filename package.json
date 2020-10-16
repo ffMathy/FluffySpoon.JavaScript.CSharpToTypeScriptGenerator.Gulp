@@ -21,7 +21,7 @@
   "devDependencies": {
     "@types/jasmine": "^2.5.47",
     "@types/node": "^8.0.24",
-    "jasmine": "^2.6.0"
+    "jasmine": "^3.6.2"
   },
   "dependencies": {
     "@fluffy-spoon/csharp-to-typescript-generator": "latest"
